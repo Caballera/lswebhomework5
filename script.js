@@ -98,15 +98,14 @@ Hint: Use your last three loops and if/then/else statements. You can learn about
 
 */
 
-    for(var i = 1; i <= 100; i++) {
-        if(i % 3 && i % 5) {
-            console.log("FizzBuzz");
-        } else {
-            if(i % 3 == 0) {
-                console.log("Fizz");
-            }
-            if(i % 5 == 0) {
-                console.log("Buzz");
-            }
-        }
-    }
+for(var i = 0; i <= 100; i++) {
+	if(i % 15 === 0) {
+		console.log("fizzbuzz");
+	}	else if (i % 5 === 0) {
+		console.log("buzz");
+	} else if (i % 3 === 0) {
+		console.log("fizz");
+	}	else {
+		console.log(i);
+	}
+}
